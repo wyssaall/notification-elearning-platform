@@ -11,5 +11,5 @@ class Command(BaseCommand):
     help = "Consume RabbitMQ messages and create notifications (blocking)."
 
     def handle(self, *args, **options):
-        self.stdout.write(self.style.SUCCESS("Starting RabbitMQ consumer…"))
+        self.stdout.write(self.style.SUCCESS("Starting RabbitMQ consumer..."))
         run_consumer()

@@ -1,7 +1,4 @@
-"""
-RabbitMQ consumer: receives JSON messages and creates Notification rows.
-Run with: python manage.py run_rabbitmq_consumer
-"""
+"""RabbitMQ → Notification rows. Run: python manage.py run_rabbitmq_consumer"""
 import json
 import logging
 

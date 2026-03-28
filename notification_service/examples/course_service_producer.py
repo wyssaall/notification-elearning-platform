@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
-"""
-Example producer for the Course Service (separate codebase in real life).
-Sends one enrollment event to RabbitMQ — same JSON shape the Notification Service expects.
+"""Demo publisher (Course Service). Same JSON as the notification consumer expects.
 
-Run (with RabbitMQ up):
-  pip install pika
-  python course_service_producer.py
-
-Or from repo root:
-  python examples/course_service_producer.py
+Usage: python examples/course_service_producer.py [user_id] [course_name]
+Requires: RabbitMQ running, pika installed (`pip install -r requirements.txt`).
 """
 import json
 import os
